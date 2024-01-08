@@ -21,6 +21,7 @@ La température aujourd'hui est de 294 Kelvins.
 
 1. Pour commencer, créer une variable `kelvins` qui prend pour valeur 294
 
+
 Nous pouvons aussi exprimer une température en Celsius. La température en Celsius est inférieure de 273 degrés à celle en Kelvins.
 
 2. Convertir la température en Kelvins en stockant le résultat dans une variable nommée `celsius`.
