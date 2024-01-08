@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+
+        <h1>Exercice 0</h1>
+
+        <script type="text/javascript">
+
+        /* Section 1 */   
+            //création d'une variable "name" contenant la string "Joe"
+        var name = "Joe";
+            //création d'une variable "city" contenant la string "London"
+        var city = 'London';
+            //création d'une variable "age" contenant l'entier 32
+        var age = 32;
+            //création d'une variable "isRed" contenant le booléen "Vrai"
+        var isRed = true;
+            //création d'une variable "isOld" contenant le booléen "False" {age=32;32<80}=>isOld=False
+        var isOld = age > 80;
+            //création d'une variable "previousJobs" contenant une liste de String (la String 'lawyer', 'developper' et 'Professionnal climber')
+        var previousJobs = ['lawyer', 'developper', 'Professionnal climber'];
+            //création d'une fonction "info" prenant 2 parametres en entrée (height, et weight)
+        function info(height, weight) {
+            if (height > 180) { // si height est superieur à 180
+                console.log('Vous êtes grand'); //On affiche dans la console la String "Vous êtes grand"
+            }
+            if (weight < 0) { //si weight est négatif
+                console.log('oups, there is a problem'); //On affiche dans la console la String "oups, there is a problem"
+            } else if ( weight < 15) { //sinon si le poid est strictement inférieur à 15
+                console.log('Are you that slim ?')//On affiche dans la console la String "Are you that slim ?"
+            } else {//sinon
+                console.log('Good !')//On affiche dans la console la String "Good ! "
+            }
+        }
+            //appel à la fonction info avec pour parametres height=165 et weight=45
+        info(165, 45); //devrais afficher "Good ! " dans la console
+            //création de la variabl myHeight contenant l'entier "175"
+        var myHeight = 175;
+            //création de la variabl myHeight contenant l'entier "86"
+        var myWeight = 86;
+            //appel à la fonction info avec pour parametres height=myHeight=175 et weight=myWeight=86
+        info(myHeight, myWeight); //devrais afficher "Good ! " dans la console
+            //appel à la fonction info avec pour parametres height=myHeight +15 =190 et weight=myWeight -100=-14
+        info(myHeight + 15, myWeight - 100);//devrais afficher "Vous êtes grand" et "oups, there is a problem" dans la console
+
+            //création d'une fonction toUpper prenant une variable en entée (variable)
+        function toUpper(variable) {
+            return variable.toUpperCase();//retourne variable une fois la méthode toUpperCase appliqué
+        }
+            //création de la variable upperName contenant la Stringg de la variable name en majuscule ("JOE")
+        var upperName = toUpper(name);
+            //création d'une boucle d'itération 'for' qui compte de 1 en 1 de 0 à 3 exclue 
+        for (i = 0; i < 3; i = i + 1) { //
+            console.log(previousJobs[i]);//affiche l'item à la i+ème position de la liste previousJobs
+        } //c'est donc une boucle qui parcours et affiche le contenue de previousJobs
+
+        /* Section 2: */
+
+        // afficher la ville dans laquele Joe vit.
+        console.log(city);
+
+        // afficher si Joe est roux ou pas.
+        function estRoux(isRed){
+            if (isRed){
+                return "est Roux"
+            }
+            else{
+                return "n'est pas Roux"
+            }
+        }
+        console.log("Joe "+estRoux(isRed));
+        /* Section 3 */
+
+        console.log(myVariable);//Affiche une erreur car myVariable n'est pas déclarer
+
+        </script>
+
+    </body>
+</html>
